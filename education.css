@@ -1,0 +1,93 @@
+html, body {
+  width: 100%;
+  height:100%;
+}
+
+html {
+  height:100%;
+}
+
+body {
+  margin:0;
+}
+
+.bg {
+  animation:slide 3s ease-in-out infinite alternate;
+  background-image: linear-gradient(-60deg, #6c3 50%, #09f 50%);
+  bottom:0;
+  left:-50%;
+  opacity:.5;
+  position:fixed;
+  right:-50%;
+  top:0;
+  z-index:-1;
+}
+
+.bg2 {
+  animation-direction:alternate-reverse;
+  animation-duration:4s;
+}
+
+.bg3 {
+  animation-duration:5s;
+}
+
+
+
+
+@keyframes slide {
+  0% {
+    transform:translateX(-25%);
+  }
+  100% {
+    transform:translateX(25%);
+  }
+}
+
+.education-section {
+    padding: 60px 20px;
+}
+
+.edu-item {
+    background: rgba(255, 255, 255, 0.1); /* glass effect */
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-left: 5px solid rgba(18, 18, 193, 0.8);
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    color: rgb(17, 17, 17);
+    transition: transform 0.3s ease;
+}
+
+.edu-item:hover {
+    transform: scale(1.02);
+}
+
+.edu-item h4 {
+    margin: 0;
+    font-weight: bold;
+    color: #090909;
+}
+
+.edu-item p {
+    margin: 0;
+    color: #0a0909;
+}
+
+.edu-item small {
+    display: block;
+    margin-top: 5px;
+    color: #282727;
+}
+
+.edu-logo {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    border-radius: 10px;
+    background: rgba(43, 43, 43, 0.3);
+    padding: 5px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}

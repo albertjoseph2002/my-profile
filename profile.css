@@ -1,0 +1,112 @@
+#content1 {
+    margin-left: 65px;
+    margin-top: 104px;
+}
+
+.customfull {
+    background-color: linear-gradient(#776f6f, #96a6bf);
+}
+
+#footer {
+    margin-left: 54px;
+    margin-top: 12px;
+}
+
+.icon {
+    font-size: 2.5rem; /* adjust as needed */
+    margin-right: 15px;
+    color: #000;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.icon:hover {
+    color: #0d6efd; /* blue on hover */
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+}
+
+.bg {
+    animation: slide 3s ease-in-out infinite alternate;
+    background-image: linear-gradient(-60deg, #6c3 50%, #09f 50%);
+    bottom: 0;
+    left: -50%;
+    opacity: .5;
+    position: fixed;
+    right: -50%;
+    top: 0;
+    z-index: -1;
+}
+
+.bg2 {
+    animation-direction: alternate-reverse;
+    animation-duration: 4s;
+}
+
+.bg3 {
+    animation-duration: 5s;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(-25%);
+    }
+    100% {
+        transform: translateX(25%);
+    }
+}
+
+.navbar {
+    background-color: rgba(255, 255, 255, 0.1) !important;
+    backdrop-filter: blur(100px);
+    -webkit-backdrop-filter: blur(100px);
+    border: 2px solid rgba(73, 70, 70, 0.324) !important;
+    border-radius: 15px;
+    margin: 7px;
+    box-shadow: none;
+}
+
+/* Default nav links - clean, no glass */
+.navbar-nav .nav-link {
+    color: #fff;
+    padding: 0.5rem 1.2rem;
+    margin: 0 0.3rem;
+    border-radius: 50px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    position: relative;
+    z-index: 1;
+    background: none;
+    border: none;
+    box-shadow: none;
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+}
+
+/* Glass effect only on hover or active */
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link:active{
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    box-shadow: 0 4px 15px rgba(255, 255, 255, 0.1);
+    color: #070606;
+}
+
+.navbar-brand {
+    color: #0f0e0e;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
